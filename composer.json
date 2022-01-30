@@ -1,0 +1,33 @@
+{
+    "name": "rezaf-dev/laravel-temp-link",
+    "description": "Generate temporary symlinks to private files without using any database",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RezafDev\\LaravelTempLink\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RezafDev\\LaravelTempLink\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RezafDev\\LaravelTempLink\\LaravelTempLinkServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Reza Fathi",
+            "email": "rezafathidev@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
