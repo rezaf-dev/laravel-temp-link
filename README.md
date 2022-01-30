@@ -36,8 +36,8 @@ return [
 You can use TempLink Facade to generate a new link:
 ```php
 user \RezafDev\LaravelTempLink\Facades;
-$temp_link1 = TempLink::generateTempLink('path/to/private/file.txt', 3600);
-echo $temp_link1; // http://127.0.0.1:8000/storage/16435/325/61f6430b18189.txt
+echo TempLink::generateTempLink('path/to/private/file.txt', 3600); 
+// http://127.0.0.1:8000/storage/16435/325/61f6430b18189.txt
 ```
 
 You need to set [laravel scheduler](https://laravel.com/docs/8.x/scheduling#running-the-scheduler) to run regularly to remove expired links. Please note that if you run a cron job every 10 minutes, you shouldn't generate links with an expiration time less than 10 minutes (You can, but it doesn't work).
